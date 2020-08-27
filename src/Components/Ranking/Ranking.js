@@ -5,12 +5,13 @@ import Axios from 'axios'
 import Navbar from '../../Components/Navbar/Navbar'
 import Sidebar from '../../Components/Sidebar/Sidebar'
 import Taskbar from '../../Components/Taskbar/Taskbar'
+import {useDispatch, useSelector} from 'react-redux'
 
 const Ranking = () => {
     
     const [arr, setArr] = useState([])
     const abortController = new AbortController()
-
+    const user = useSelector(state => state.user)
 
     useEffect(() => {    
         
@@ -21,7 +22,7 @@ const Ranking = () => {
                   cat: 'User'
               },
               withCredentials: true,
-              url: "https://archimedus.herokuapp.com/getuser",
+              url: user.endpoint+"/getuser",
             }).then((res) => {    
               // console.log('ok')
               console.log(res.data)

@@ -4,16 +4,15 @@ import {
 } from "react-router-dom";
 import './Login.css'
 import Axios from 'axios'
-import {useDispatch} from 'react-redux'
+import {useDispatch, useSelector} from 'react-redux'
 import {setName,setPoints,setLogin,setLevel, setId} from '../../actions/index.js'
-
 
 const Login = () => {
     
     const history = useHistory()
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
-    
+    const user = useSelector(state => state.user)
     const dispatch = useDispatch();
 
     const login = () => {
@@ -25,7 +24,7 @@ const Login = () => {
                 password: password
               },
               withCredentials: true,
-              url: "https://archimedus.herokuapp.com/login",
+              url: user.endpoint+"/login",
             }).then((res) => {    
               console.log('ok')
               console.log(res.data)

@@ -32,10 +32,10 @@ const TaskContent = () => {
                       _id: user.id
                     },
                     withCredentials: true,
-                    url: "https://archimedus.herokuapp.com/checkProblemExisting",
+                    url: user.endpoint+"/checkProblemExisting",
                   }).then((res) => {    
                     // console.log('ok')
-                    console.log(res.data)
+                    // console.log(res.data)
                     if(res.data !== 'exist'){
                       try{
                         Axios({
@@ -45,10 +45,10 @@ const TaskContent = () => {
                             _id: user.id
                           },
                           withCredentials: true,
-                          url: "https://archimedus.herokuapp.com/addproblemtouser",
+                          url: user.endpoint+"/addproblemtouser",
                         }).then((res) => {    
                           // console.log('ok')
-                          console.log(res.data)
+                          // console.log(res.data)
                           
                           
                         }).catch((err) => {
@@ -65,10 +65,10 @@ const TaskContent = () => {
                               points:JSON.parse(retrievedObj).points
                             },
                             withCredentials: true,
-                            url: "https://archimedus.herokuapp.com/addpoints",
+                            url: user.endpoint+"/addpoints",
                           }).then((res) => {    
                             // console.log('ok')
-                            console.log(res.data)
+                            // console.log(res.data)
                             
                             
                           }).catch((err) => {

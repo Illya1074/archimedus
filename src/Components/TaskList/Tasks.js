@@ -6,12 +6,13 @@ import './Tasks.css'
 import Navbar from '../../Components/Navbar/Navbar'
 import Sidebar from '../../Components/Sidebar/Sidebar'
 import Taskbar from '../../Components/Taskbar/Taskbar'
+import {useSelector} from 'react-redux'
 
 const Tasks = ({location}) => {
-
+    const user = useSelector(state => state.user)
     const abortController = new AbortController()
     const [state, setState] = useState([{name: '', cat:'', date: ''}])
-    const ENDPOINT = 'https://archimedus.herokuapp.com/';
+    const ENDPOINT = user.endpoint;
 
     useEffect(() => {    
         const obj = queryString.parse(location.search);
@@ -25,10 +26,10 @@ const Tasks = ({location}) => {
                   cat: obj.cat
               },
               withCredentials: true,
-              url: "https://archimedus.herokuapp.com/findCat",
+              url: user.endpoint+"/findCat",
             }).then((res) => {    
               // console.log('ok')
-              console.log(res.data)
+              // console.log(res.data)
               setState(res.data)
             }).catch((err) => {
               console.log(err)
@@ -45,10 +46,10 @@ const Tasks = ({location}) => {
                   name: obj.val
               },
               withCredentials: true,
-              url: "https://archimedus.herokuapp.com/findProblem",
+              url: user.endpoint+"/findProblem",
             }).then((res) => {    
               // console.log('ok')
-              console.log(res.data)
+              // console.log(res.data)
               setState(res.data)
             }).catch((err) => {
               console.log(err)
@@ -64,12 +65,13 @@ const Tasks = ({location}) => {
                   lvl: obj.lvl
               },
               withCredentials: true,
-              url: "https://archimedus.herokuapp.com/findLvl",
+              url: user.endpoint+"/findLvl",
             }).then((res) => {    
               // console.log('ok')
-              console.log(res.data)
+              // console.log(res.data)
               setState(res.data)
             }).catch((err) => {
+              console.log(user.endpoint)
               console.log(err)
             })
           } catch(err){
@@ -88,11 +90,14 @@ const Tasks = ({location}) => {
             <Sidebar/>
             <Taskbar/>
             <div className="tasks">
+            <div id="test"></div>     
+                
                 {
                     state.map((item, i) => 
                         <Task name={item.name} id={item.id} points={item.points} key={i} cat={item.cat} date={'02.05.2020'} _id={item._id} content={item.content} answer={item.answer}/>
                     )
                 }
+                
             </div>
           
         </div>

@@ -3,7 +3,8 @@ const userReducer = (state = {
     points: 0,
     login: false,
     level: 1,
-    id: ''
+    id: '',
+    endpoint: 'http://localhost:5000'
 }, action) => {
     switch(action.type){
         case 'SETNAME':

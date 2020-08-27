@@ -4,11 +4,13 @@ import {
 } from "react-router-dom";
 import './Signup.css'
 import Axios from 'axios'
+import {useSelector} from 'react-redux'
 
 const Signup = () => {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const history = useHistory()
+    const user = useSelector(state => state.user)
 
     const signup = () => {
         try{
@@ -19,7 +21,7 @@ const Signup = () => {
                 password: password
               },
               withCredentials: true,
-              url: "https://archimedus.herokuapp.com/register",
+              url: user.endpoint+"/register",
             }).then((res) => {    
               console.log('ok')
               console.log(res.data)
