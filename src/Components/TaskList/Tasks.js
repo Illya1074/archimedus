@@ -9,10 +9,9 @@ import Taskbar from '../../Components/Taskbar/Taskbar'
 import {useSelector} from 'react-redux'
 
 const Tasks = ({location}) => {
-    const user = useSelector(state => state.user)
     const abortController = new AbortController()
     const [state, setState] = useState([{name: '', cat:'', date: ''}])
-    const ENDPOINT = user.endpoint;
+    const endpoint = useSelector(state => state.endPoint)
 
     useEffect(() => {    
         const obj = queryString.parse(location.search);
@@ -26,7 +25,7 @@ const Tasks = ({location}) => {
                   cat: obj.cat
               },
               withCredentials: true,
-              url: user.endpoint+"/findCat",
+              url: endpoint+"/findCat",
             }).then((res) => {    
               // console.log('ok')
               // console.log(res.data)
@@ -46,7 +45,7 @@ const Tasks = ({location}) => {
                   name: obj.val
               },
               withCredentials: true,
-              url: user.endpoint+"/findProblem",
+              url: endpoint+"/findProblem",
             }).then((res) => {    
               // console.log('ok')
               // console.log(res.data)
@@ -65,13 +64,13 @@ const Tasks = ({location}) => {
                   lvl: obj.lvl
               },
               withCredentials: true,
-              url: user.endpoint+"/findLvl",
+              url: endpoint+"/findLvl",
             }).then((res) => {    
               // console.log('ok')
               // console.log(res.data)
               setState(res.data)
             }).catch((err) => {
-              console.log(user.endpoint)
+              console.log(endpoint)
               console.log(err)
             })
           } catch(err){
@@ -82,7 +81,7 @@ const Tasks = ({location}) => {
         
         return abortController.abort()
         
-    },  [ENDPOINT, location.search]);
+    },  [endpoint, location.search]);
 
     return (
         <div>

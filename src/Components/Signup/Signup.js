@@ -10,7 +10,8 @@ const Signup = () => {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const history = useHistory()
-    const user = useSelector(state => state.user)
+    
+    const endpoint = useSelector(state => state.endPoint)
 
     const signup = () => {
         try{
@@ -21,7 +22,7 @@ const Signup = () => {
                 password: password
               },
               withCredentials: true,
-              url: user.endpoint+"/register",
+              url: endpoint+"/register",
             }).then((res) => {    
               console.log('ok')
               console.log(res.data)

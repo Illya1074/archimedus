@@ -11,8 +11,8 @@ const Ranking = () => {
     
     const [arr, setArr] = useState([])
     const abortController = new AbortController()
-    const user = useSelector(state => state.user)
-
+    
+    const endpoint = useSelector(state => state.endPoint)
     useEffect(() => {    
         
         try{
@@ -22,7 +22,7 @@ const Ranking = () => {
                   cat: 'User'
               },
               withCredentials: true,
-              url: user.endpoint+"/getuser",
+              url: endpoint+"/getuser",
             }).then((res) => {    
               // console.log('ok')
               console.log(res.data)

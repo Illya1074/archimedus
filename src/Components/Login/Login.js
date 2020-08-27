@@ -12,11 +12,11 @@ const Login = () => {
     const history = useHistory()
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
-    const user = useSelector(state => state.user)
-    const dispatch = useDispatch();
-
-
     
+    const dispatch = useDispatch();
+    const endpoint = useSelector(state => state.endPoint)
+
+
     const login = () => {
       localStorage.removeItem("MyUser");  
       try{
@@ -27,7 +27,7 @@ const Login = () => {
                 password: password
               },
               withCredentials: true,
-              url: user.endpoint+"/login",
+              url: endpoint+"/login",
             }).then((res) => {    
               console.log('ok')
               console.log(res.data)

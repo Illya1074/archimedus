@@ -16,8 +16,10 @@ const TaskContent = () => {
     const dispatch = useDispatch();
     const [mark, setMark] = useState('')
     const user = useSelector(state => state.user)
+    const endpoint = useSelector(state => state.endPoint)
 
     const click = (e) => {
+      console.log(endpoint)
         if(e.keyCode == 13){
             // put the login here
             if(e.target.value == JSON.parse(retrievedObj).answer){
@@ -32,7 +34,7 @@ const TaskContent = () => {
                       _id: user.id
                     },
                     withCredentials: true,
-                    url: user.endpoint+"/checkProblemExisting",
+                    url: endpoint+"/checkProblemExisting",
                   }).then((res) => {    
                     // console.log('ok')
                     // console.log(res.data)
@@ -45,9 +47,9 @@ const TaskContent = () => {
                             _id: user.id
                           },
                           withCredentials: true,
-                          url: user.endpoint+"/addproblemtouser",
+                          url: endpoint+"/addproblemtouser",
                         }).then((res) => {    
-                          // console.log('ok')
+                          
                           // console.log(res.data)
                           
                           
@@ -65,7 +67,7 @@ const TaskContent = () => {
                               points:JSON.parse(retrievedObj).points
                             },
                             withCredentials: true,
-                            url: user.endpoint+"/addpoints",
+                            url: endpoint+"/addpoints",
                           }).then((res) => {    
                             // console.log('ok')
                             // console.log(res.data)
