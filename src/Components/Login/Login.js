@@ -16,7 +16,8 @@ const Login = () => {
     const dispatch = useDispatch();
 
     const login = () => {
-        try{
+      localStorage.removeItem("MyUser");  
+      try{
             Axios({
               method: "POST",
               data: {
@@ -33,6 +34,7 @@ const Login = () => {
               dispatch(setLogin(true))
               dispatch(setLevel(res.data.lvl))
               dispatch(setId(res.data._id))
+              
               history.push('/archimedus')
             }).catch((err) => {
               console.log(err)
