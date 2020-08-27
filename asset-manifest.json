@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/archimedus/static/css/main.c263f1ec.chunk.css",
+    "main.js": "/archimedus/static/js/main.b9afb9e1.chunk.js",
+    "main.js.map": "/archimedus/static/js/main.b9afb9e1.chunk.js.map",
+    "runtime-main.js": "/archimedus/static/js/runtime-main.dfce2e83.js",
+    "runtime-main.js.map": "/archimedus/static/js/runtime-main.dfce2e83.js.map",
+    "static/js/2.7427119e.chunk.js": "/archimedus/static/js/2.7427119e.chunk.js",
+    "static/js/2.7427119e.chunk.js.map": "/archimedus/static/js/2.7427119e.chunk.js.map",
+    "index.html": "/archimedus/index.html",
+    "precache-manifest.997e2ceb19e90433742c59d41fc3e636.js": "/archimedus/precache-manifest.997e2ceb19e90433742c59d41fc3e636.js",
+    "service-worker.js": "/archimedus/service-worker.js",
+    "static/css/main.c263f1ec.chunk.css.map": "/archimedus/static/css/main.c263f1ec.chunk.css.map",
+    "static/js/2.7427119e.chunk.js.LICENSE.txt": "/archimedus/static/js/2.7427119e.chunk.js.LICENSE.txt",
+    "static/media/Login.css": "/archimedus/static/media/logo2.5d98e726.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dfce2e83.js",
+    "static/js/2.7427119e.chunk.js",
+    "static/css/main.c263f1ec.chunk.css",
+    "static/js/main.b9afb9e1.chunk.js"
+  ]
+}
