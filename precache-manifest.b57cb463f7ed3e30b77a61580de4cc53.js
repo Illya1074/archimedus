@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7fd1482dadefa465c49ce0ed9daf160c",
+    "revision": "5db4e8ac256ade19c1132aac353b3c0e",
     "url": "/archimedus/index.html"
   },
   {
-    "revision": "b604a8a8cb0fd48c88b1",
-    "url": "/archimedus/static/css/main.c263f1ec.chunk.css"
+    "revision": "59220950c2e7d671ae10",
+    "url": "/archimedus/static/css/main.24c0e52d.chunk.css"
   },
   {
-    "revision": "1530cc1312216b2f120c",
-    "url": "/archimedus/static/js/2.7427119e.chunk.js"
+    "revision": "c8f65a3d769795760035",
+    "url": "/archimedus/static/js/2.ca3dc19c.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/archimedus/static/js/2.7427119e.chunk.js.LICENSE.txt"
+    "url": "/archimedus/static/js/2.ca3dc19c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b604a8a8cb0fd48c88b1",
-    "url": "/archimedus/static/js/main.c46e4733.chunk.js"
+    "revision": "59220950c2e7d671ae10",
+    "url": "/archimedus/static/js/main.dcc302b0.chunk.js"
   },
   {
     "revision": "dfd659c8194a754c323a",
