@@ -6,7 +6,7 @@ const userReducer = (state = JSON.parse(localStorage.getItem('MyUser')) || {
     login: false,
     level: 1,
     id: '',
-    endpoint: 'http://localhost:5000'
+    endpoint: 'https://archimedus.herokuapp.com/'
 }, action) => {
     switch(action.type){
         case 'SETNAME':
