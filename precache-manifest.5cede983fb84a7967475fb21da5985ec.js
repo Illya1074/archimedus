@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5db4e8ac256ade19c1132aac353b3c0e",
+    "revision": "4ad46a621dab91d0bcbc8e7d7cfb8f62",
     "url": "/archimedus/index.html"
   },
   {
-    "revision": "59220950c2e7d671ae10",
+    "revision": "bce3761c007e82e3e23d",
     "url": "/archimedus/static/css/main.24c0e52d.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/archimedus/static/js/2.ca3dc19c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "59220950c2e7d671ae10",
-    "url": "/archimedus/static/js/main.dcc302b0.chunk.js"
+    "revision": "bce3761c007e82e3e23d",
+    "url": "/archimedus/static/js/main.639a8e0c.chunk.js"
   },
   {
     "revision": "dfd659c8194a754c323a",

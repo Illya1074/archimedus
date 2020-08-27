@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/archimedus/static/css/main.24c0e52d.chunk.css",
-    "main.js": "/archimedus/static/js/main.dcc302b0.chunk.js",
-    "main.js.map": "/archimedus/static/js/main.dcc302b0.chunk.js.map",
+    "main.js": "/archimedus/static/js/main.639a8e0c.chunk.js",
+    "main.js.map": "/archimedus/static/js/main.639a8e0c.chunk.js.map",
     "runtime-main.js": "/archimedus/static/js/runtime-main.dfce2e83.js",
     "runtime-main.js.map": "/archimedus/static/js/runtime-main.dfce2e83.js.map",
     "static/js/2.ca3dc19c.chunk.js": "/archimedus/static/js/2.ca3dc19c.chunk.js",
     "static/js/2.ca3dc19c.chunk.js.map": "/archimedus/static/js/2.ca3dc19c.chunk.js.map",
     "index.html": "/archimedus/index.html",
-    "precache-manifest.b57cb463f7ed3e30b77a61580de4cc53.js": "/archimedus/precache-manifest.b57cb463f7ed3e30b77a61580de4cc53.js",
+    "precache-manifest.5cede983fb84a7967475fb21da5985ec.js": "/archimedus/precache-manifest.5cede983fb84a7967475fb21da5985ec.js",
     "service-worker.js": "/archimedus/service-worker.js",
     "static/css/main.24c0e52d.chunk.css.map": "/archimedus/static/css/main.24c0e52d.chunk.css.map",
     "static/js/2.ca3dc19c.chunk.js.LICENSE.txt": "/archimedus/static/js/2.ca3dc19c.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.dfce2e83.js",
     "static/js/2.ca3dc19c.chunk.js",
     "static/css/main.24c0e52d.chunk.css",
-    "static/js/main.dcc302b0.chunk.js"
+    "static/js/main.639a8e0c.chunk.js"
   ]
 }
