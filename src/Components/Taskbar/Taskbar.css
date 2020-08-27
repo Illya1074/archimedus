@@ -1,147 +1,205 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 
 .task-bar{
-    z-index: 1;
-    top: 70px;
-    left: 70px;
-    width: 340px;
-    position: absolute;
-    height: 690px;
-    border-radius: 9px;
+  z-index: 1;
+  top: 70px;
+  left: 70px;
+  width: 340px;
+  position: absolute;
+  height: 690px;
+  border-radius: 9px;
+  background: rgb(34, 34, 34);
+}
+
+
+.task-bar__list-input{
+    width: 277px;
+    height: 35px;
+    border-radius: 4px;
+    margin: 10px auto 0;
     background: rgb(34, 34, 34);
-  }
-  
-  
-  .task-bar__list-input{
-      width: 277px;
-      height: 35px;
-      border-radius: 4px;
-      margin: 10px auto 0;
-      background: rgb(34, 34, 34);
-      padding: 5px;
-      color: white;
-      transition: 0.2s;
-      outline: none;
-  }
-  
-  /* #323232 */
-  .task-bar__list-input:hover{
-    transition: 0.2s;
-    background: black;
-    
-  }
-  
-  .task-bar__list-input:focus {
-    -webkit-box-shadow: 0px 0px 21px 0px rgba(255,255,255,1);
-    -moz-box-shadow: 0px 0px 21px 0px rgba(255,255,255,1);
-    box-shadow: 0px 0px 21px 0px rgba(255,255,255,1);
-  }
-  
-  .task-bar__list-input::placeholder{
+    padding: 5px;
     color: white;
-    
-  }
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    outline: none;
+}
+
+/* #323232 */
+.task-bar__list-input:hover{
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  background: black;
   
-  .task-bar__list{
-    display: flex;
-    flex-direction: column;
+}
+
+.task-bar__list-input:focus {
+  -webkit-box-shadow: 0px 0px 21px 0px rgba(255,255,255,1);
+  box-shadow: 0px 0px 21px 0px rgba(255,255,255,1);
+}
+
+.task-bar__list-input::-webkit-input-placeholder{
+  color: white;
   
-  }
+}
+
+.task-bar__list-input::-moz-placeholder{
+  color: white;
   
-  .task-bar_line{
-    width: 90%;
-    margin: 20px auto 0;
-    border-bottom: 1px solid #444;
-  }
+}
+
+.task-bar__list-input:-ms-input-placeholder{
+  color: white;
   
-  .task-bar__list-filters{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 90%;
-    margin: 20px auto 0;
-  }
+}
+
+.task-bar__list-input::-ms-input-placeholder{
+  color: white;
   
+}
+
+.task-bar__list-input::placeholder{
+  color: white;
   
-  .task-bar__list-filters_element{
-    margin: 5px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  .task-bar__list-filters_element-content{
-    color: #ccc;
-  
-    font-size: 15px;
-  }
-  
-  
-  .task-bar__list-difficulty_row{
-    display: flex;
-    justify-content: space-between;
+}
+
+.task-bar__list{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+
+}
+
+.task-bar_line{
+  width: 90%;
+  margin: 20px auto 0;
+  border-bottom: 1px solid #444;
+}
+
+.task-bar__list-filters{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin: 20px auto 0;
+}
+
+
+.task-bar__list-filters_element{
+  margin: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.task-bar__list-filters_element-content{
+  color: #ccc;
+
+  font-size: 15px;
+}
+
+
+.task-bar__list-difficulty_row{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+
+  margin: 20px auto 0;
+}
+
+.task-bar__list-difficulty_row-1-element{
+  color: #ccc;
+  padding: 7px 13px;
+  background: rgb(20,20,20);
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.task-bar__list-cat_list{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 0 0 20px;
+}
+
+.task-bar__list-cat_list-element{
+  color: #ccc;
+  font-size: 15px;
+  margin: 5px 14px 5px 0px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 1100px){
+  .task-bar{
+    display: block;
+    position: static;
+    margin: 20px auto 0 auto;
+    /* max-width: 970px;
+    min-width: 600px; */
     width: 80%;
-  
-    margin: 20px auto 0;
+    /* background: blue; */
+  }
+  .task-bar__list-input{
+    width: 80%;
   }
   
+}
+
+
+@media (max-width: 730px){
+  .task-bar{
+    display: block;
+    position: static;
+    margin: 20px auto 0 auto;
+    /* max-width: 970px;
+    min-width: 600px; */
+    width: 95%;
+    /* background: blue; */
+  }
   .task-bar__list-difficulty_row-1-element{
-    color: #ccc;
-    padding: 7px 13px;
-    background: rgb(20,20,20);
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    font-size: 13px;
-    cursor: pointer;
+    font-size: 12px;
   }
-  
-  .task-bar__list-cat_list{
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0 0 20px;
-  }
-  
   .task-bar__list-cat_list-element{
-    color: #ccc;
-    font-size: 15px;
-    margin: 5px 14px 5px 0px;
-    cursor: pointer;
+    font-size: 14px;
   }
-  
-
-  @media (max-width: 1100px){
-    .task-bar{
-      display: block;
-      position: static;
-      margin: 20px auto 0 auto;
-      /* max-width: 970px;
-      min-width: 600px; */
-      width: 80%;
-      /* background: blue; */
-    }
-    .task-bar__list-input{
-      width: 80%;
-    }
-    
+  .task-bar__list-difficulty_row-1-element{
+    padding: 6px 9px;
   }
-
-
-  @media (max-width: 730px){
-    .task-bar{
-      display: block;
-      position: static;
-      margin: 20px auto 0 auto;
-      /* max-width: 970px;
-      min-width: 600px; */
-      width: 95%;
-      /* background: blue; */
-    }
-    .task-bar__list-difficulty_row-1-element{
-      font-size: 12px;
-    }
-    .task-bar__list-cat_list-element{
-      font-size: 14px;
-    }
-    .task-bar__list-difficulty_row-1-element{
-      padding: 6px 9px;
-    }
-  }
+}

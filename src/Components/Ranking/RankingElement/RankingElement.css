@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 
 .ranking-element{
     width: 100%;
@@ -22,6 +29,8 @@
 
 
 .ranking-element_avatar{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 45px;
     height: 45px;
@@ -32,6 +41,8 @@
 
 
 .ranking-element{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     
 }
@@ -52,8 +63,11 @@
 
 
 .ranking-element__flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 100%;
 }
 
