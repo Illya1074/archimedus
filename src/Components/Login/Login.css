@@ -1,0 +1,157 @@
+.login{
+    width: 320px;
+    margin: 120px auto 0;
+    height: 586px;
+    background: rgb(34, 34, 34);
+    border-radius: 10px;    
+}
+
+.login-logo{
+    width: 180px;
+    height: 180px;
+    background: url('./logo2.png') 0 0/100% 120% no-repeat; 
+    margin: 0 auto;
+
+}
+
+.login-margin-wraper{
+    padding-top: 50px;
+}
+
+
+.login-header{
+    font-size: 39px;
+    color: #ccc;
+    margin: 20px auto;
+    width: 200px;
+    font-weight: 400;
+}
+
+
+
+.login-input-sec__input{
+    width: 277px;
+    height: 35px;
+    border-radius: 4px;
+    margin: 10px auto 0;
+    background: rgb(24, 24, 24);
+    padding: 5px;
+    color: #ccc;
+    transition: 0.2s;
+    outline:none;
+}
+
+.login-input-sec__input:hover{
+    transition: 0.2s;
+    background: black;
+    
+  }
+
+
+  .login-input-sec__input:focus {
+    -webkit-box-shadow: 0px 0px 21px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 21px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 21px 0px rgba(255,255,255,1);
+  }
+  
+  .login-input-sec__input::placeholder{
+    color: white;
+    
+  }
+
+  .login-input-sec{
+      width: 277px;
+      margin: 20px auto 0;
+  }
+
+
+  .login__login-button{
+    background: rgb(24, 24, 24);
+    width: 277px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 13px;
+    color: rgb(207, 75, 50);
+    margin: 20px auto 0;
+    line-height: 2.5;
+    text-align: center;
+    border-radius: 7px;
+  }
+
+  .login__login-button:hover{
+    background: rgb(34,34,34);
+    transition: 0.2s;
+  }
+
+  .login__forgot-password{
+      margin: 20px auto 0;
+      width: auto;
+      text-align: center;
+      font-size: 14px;
+      color: #ccc;
+      font-weight: 300;
+      cursor: pointer;
+  }
+
+  .login__signup{
+    margin: 20px auto 0;
+    width: auto;
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
+    font-weight: 300;
+    cursor: pointer;
+  }
+  
+@media (max-width: 730px){
+  .login{
+      width: 250px;
+      margin: 60px auto 0;
+      height: 546px;
+  }
+
+  .login__login-button{
+    width: 100%;
+  }
+
+  .login-input-sec__input{
+    width: 100%;
+  }
+
+  .login-input-sec{
+    width: 100%;
+  }
+
+  .login-header{
+    font-size: 30px;
+    width: 160px;
+  }
+
+}
+
+
+@media (max-width: 390px){
+  .login{
+      width: 250px;
+      margin: 60px auto 0;
+      height: 546px;
+  }
+
+  .login__login-button{
+    width: 100%;
+  }
+
+  .login-input-sec__input{
+    width: 100%;
+  }
+
+  .login-input-sec{
+    width: 100%;
+  }
+
+  .login-header{
+    font-size: 30px;
+    width: 160px;
+  }
+
+}

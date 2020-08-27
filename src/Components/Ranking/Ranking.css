@@ -1,0 +1,39 @@
+
+@media (min-width: 1200px){
+    .ranking{
+        width: 80%;
+        height: auto;
+        /* border: 1px solid black; */
+        margin: 50px auto 0;
+        /* position: relative; */
+    }
+  }
+
+@media (max-width: 1200px){
+    .space{
+        margin: 100px;
+    }
+    .ranking{
+        width: 80%;
+        height: auto;
+        /* border: 5px solid black; */
+        margin: 50px auto 0;
+        /* position: relative; */
+    }
+  }
+
+
+@media (max-width: 730px){
+    .space{
+        margin: 50px;
+    }
+    .ranking{
+        width: 95%;
+        height: auto;
+        /* border: 5px solid black; */
+        margin: 50px auto 0;
+        /* position: relative; */
+    }
+}
+
+

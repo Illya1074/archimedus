@@ -1,0 +1,127 @@
+.tasks{
+    /* position: absolute; */
+    /* top: 150px; */
+    margin: 40px 20px 0 430px;
+    /* left: 430px; */
+    
+    
+  }
+  
+  .tasks-sec{
+    cursor: pointer;
+    /* position: absolute; */
+    top: 150px;
+    border-radius: 9px;
+    width: 100%;
+    /* left: 430px;
+    height: 120px; */
+    background:rgb(34, 34, 34);
+    padding: 10px;  
+    margin: 0 0 20px;
+  }
+  
+  
+  .tasks-sec{
+  
+    display: flex;
+    justify-content: space-between;
+    color: #ccc;
+  }
+  
+  
+  .tasks-sec_icon{
+    width: 50px;
+  
+    height: 50px;
+    color: blue;
+    /* background: blue; */
+    
+  }
+  
+  .tasks-sec_element-start_content{
+    display: flex;
+    /* border: 1px solid white; */
+  }
+  
+  .tasks-sec_element-start_content-rate{
+    color: #ccc;
+    padding: 8px 10px;
+    background: rgb(20,20,20);
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    font-size: 13px;
+    margin-right: 20px;
+  }
+  
+  .tasks-sec_element-start_content-name{
+    margin: auto 0;
+    color: white;
+    font-size: 18px;
+  }
+  
+  
+  
+  .tasks-sec_element-start_content-propreties{
+    margin: 5px 0 10px 10px;
+  }
+  
+  
+  .tasks-sec_element-start_content-cat{
+    /* font-size: 13px; */
+    /* background: rgb(34, 34, 34); */
+    /* width: 90px;
+    padding: 3px; */
+    padding: 3px;
+  }
+  
+  .tasks-sec_element-start_content-cat_text{
+    font-size: 13px;
+    color: #ccc;
+    display: inline-block;
+    background: rgb(34, 34, 34);
+    padding: 4px 7px;
+  
+  }
+
+  @media (min-width: 1100px){
+    .tasks{
+      max-width: 1200px;
+      min-width: 630px;
+    }
+  }
+
+  
+  @media (max-width: 1100px){
+    .tasks{
+      /* display: block; */
+      /* position: static; */
+      /* margin: 20px auto 0 auto; */
+      width: 80%;
+      margin: 30px auto;
+      /* background: blue; */
+    }
+  }
+
+
+  @media (max-width: 730px){
+    .tasks{
+      /* display: block; */
+      /* position: static; */
+      /* margin: 20px auto 0 auto; */
+      width: 95%;
+      margin: 15px auto;
+      /* background: blue; */
+    }
+    .tasks-sec_element-start_content-rate{
+      font-size: 12px;
+    }
+    .tasks-sec_element-start_content-name{
+      font-size: 14px;
+    }
+    .tasks-sec_element-start_content-propreties{
+      font-size: 14px;
+    }
+    .tasks-sec_element-start_content-cat_text{
+      font-size: 14px;
+    }
+  }
