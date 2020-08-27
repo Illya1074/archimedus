@@ -34,7 +34,7 @@ const Login = () => {
               dispatch(setLogin(true))
               dispatch(setLevel(res.data.lvl))
               dispatch(setId(res.data._id))
-              history.push('/')
+              history.push('/archimedus')
             }).catch((err) => {
               console.log(err)
             })

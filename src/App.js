@@ -6,6 +6,9 @@ import TaskContent from './Components/TaskContent/TaskContent'
 import Login from './Components/Login/Login'
 import Signup from './Components/Signup/Signup'
 import Ranking from './Components/Ranking/Ranking'
+// import Navbar from './Components/Navbar/Navbar'
+// import Sidebar from './Components/Sidebar/Sidebar'
+// import Taskbar from './Components/Taskbar/Taskbar'
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,13 +22,12 @@ function App() {
   return (
     <div className="App">
       
-      
       <Router>
         {/* <Navbar/>
         <Sidebar/>
         <Taskbar/> */}
         <Switch>
-          <Route exact path="/" component={Home}>
+          <Route exact path="/archimedus" component={Home}>
           </Route>
           <Route path="/tasklist" component={Tasks}>
           </Route>
