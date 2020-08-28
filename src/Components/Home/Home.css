@@ -1,0 +1,161 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+
+.home{
+    max-width: 1200px;
+    min-width: 200px;
+    margin: 50px auto 0; 
+    /* border: 2px solid white; */
+}
+
+
+.home_header{
+    font-size: 48px;
+    color: #ccc;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 0 100px;
+}
+
+
+.home_content{
+    color: #ccc;
+    font-size: 17px;
+    font-weight: 500;
+    width: 500px;
+    line-height: 1.5;
+    margin: auto 0 auto 10px;
+    text-align: center;
+}
+
+.home_content_start{
+    color: #ccc;
+    font-size: 28px;
+    font-weight: 500;
+    width: 90%;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0 auto 50px;
+}
+
+
+.lvl{
+    background: url('./lvl.jpg') center/100% 100% no-repeat;
+}
+
+.cate{
+    background: url('./cate.jpg') center/100% 100% no-repeat;
+}
+
+.rank{
+    background: url('./rank.jpg') center/100% 100% no-repeat;
+}
+
+.home-pic{
+    width: 410px;
+    height: 220px;
+    border: 2px solid rgb(34,34,34);
+    margin: 0 0 50px 10px;
+    border-radius: 7px;
+}
+
+
+.home_flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    /* border: 1px solid black; */
+    margin: 20px auto;
+    width: 80%;
+}
+
+
+
+
+
+
+@media (max-width: 1120px){
+    .home_header{
+        font-size: 38px;
+    }
+    
+    
+    .home_content{
+        font-size: 15px;
+        width: 300px;
+    }
+    
+    .home_content_start{
+        font-size: 22px;
+    }
+
+    .home-pic{
+        width: 300px;
+        height: 160px;
+    }
+    .home_content_start{
+        width: 80%;
+    }
+    .home_flex{
+        width: 94%;
+    }
+}
+  
+@media (max-width: 700px){
+    .home_header{
+        font-size: 30px;
+
+    }
+    
+    
+    .home_content{
+        font-size: 14px;
+        width: 100%;
+        margin: 30px auto;
+    }
+    
+
+    .home-pic{
+        margin: 10px auto;
+    }
+    
+    .home_content_start{
+        margin: 0 0 10px;
+        width: 100%;
+        font-size: 15px;
+    }
+    
+
+    .home_flex{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 100%;
+        /* border: 2px solid white; */
+        
+    }
+}
+
+@media (max-width: 500px){
+    .home_header{
+        font-size: 23px;
+        margin: 0 0 30px;
+    }
+    .home-pic{
+        width: 205px;
+        height: 110px;
+    }
+}
+  

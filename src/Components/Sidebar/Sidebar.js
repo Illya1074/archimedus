@@ -45,14 +45,14 @@ const Sidebar = () => {
                     <Contact className="icon contact" width={27} height={27} fill={'#C0C0C0'} position={'fixed'} top={'0'} left={'0'}/>
                     <Question className="icon question" width={27} height={27} fill={'#C0C0C0'}/>
                     <Cup className="icon cup" width={27} height={27} fill={'#C0C0C0'}/>
-                    <li onClick={() => click('archimedus')} className="side-bar__menu-list_content">Home</li>
-                    <li onClick={() => click('kata')} className="side-bar__menu-list_content">Kata</li>
-                    <li onClick={() => click('aboutus')} className="side-bar__menu-list_content">About&nbsp;us</li>
-                    <li onClick={() => click('login')} className="side-bar__menu-list_content">Login</li>
+                    <li onClick={() => click('archimedus')} className="side-bar__menu-list_content">Główna</li>
+                    <li onClick={() => click('tasklist?lvl=1#test')} className="side-bar__menu-list_content">Zadania</li>
+                    <li onClick={() => click('contact')} className="side-bar__menu-list_content">Kontact</li>
+                    <li onClick={() => click('login')} className="side-bar__menu-list_content">Zaloguj&nbsp;się</li>
                     <li onClick={() => {
                         setSidebar(!sidebar)
                         toRanking()
-                    }} className="side-bar__menu-list_content">Leaders</li>
+                    }} className="side-bar__menu-list_content">Ranking</li>
                     </ul>
                 </div>
                 

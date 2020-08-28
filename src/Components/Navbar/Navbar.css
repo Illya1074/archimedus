@@ -72,7 +72,7 @@
 }
 
 
-@media (max-width: 730px){
+@media (max-width: 740px){
     /* background: blue; */
   .navbar-list_name{
     font-size: 14px;
@@ -87,7 +87,7 @@
 
 }
 
-@media (max-width: 486px){
+@media (max-width: 496px){
   /* background: blue; */
 .navbar-list_kyu{
   display: none;

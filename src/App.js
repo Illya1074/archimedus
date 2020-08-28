@@ -5,6 +5,7 @@ import Tasks from './Components/TaskList/Tasks'
 import TaskContent from './Components/TaskContent/TaskContent'
 import Login from './Components/Login/Login'
 import Signup from './Components/Signup/Signup'
+import Contact from './Components/Contact/Contact'
 import Ranking from './Components/Ranking/Ranking'
 // import Navbar from './Components/Navbar/Navbar'
 // import Sidebar from './Components/Sidebar/Sidebar'
@@ -27,6 +28,8 @@ function App() {
         <Sidebar/>
         <Taskbar/> */}
         <Switch>
+          <Route exact path="/contact" component={Contact}>
+          </Route>
           <Route exact path="/archimedus" component={Home}>
           </Route>
           <Route path="/tasklist" component={Tasks}>
