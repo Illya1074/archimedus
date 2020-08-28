@@ -1,6 +1,6 @@
-
+// http://localhost:5000
 // https://archimedus.herokuapp.com
-const endPoint = (state = 'http://localhost:5000', action) => {
+const endPoint = (state = 'https://archimedus.herokuapp.com', action) => {
     switch(action.type){
         case 'SETENDPOINT':
             state = action.val
