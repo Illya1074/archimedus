@@ -36,5 +36,17 @@ export const setId = (id) => {
     }
 }
 
+export const defualtState = () => {
+    return {
+        type: 'DEFUALT_STATE'
+    }
+}
+
+export const stateInisialize = (state) => {
+    return {
+        type: 'STATE_INISIALIZE',
+        state: state
+    }
+}
 
 

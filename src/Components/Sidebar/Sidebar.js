@@ -22,6 +22,8 @@ const Sidebar = () => {
         history.push('/'+val)
     }
 
+    
+
     return (
         <div>
             <div onClick={() => setSidebar(!sidebar)} className='burger'>
@@ -32,7 +34,6 @@ const Sidebar = () => {
             <div className={sidebar ? "side-bar active" : "side-bar"}>
                 {sidebar ? <div onClick={() => setSidebar(!sidebar)} className='exit'>
                     <div className="cross-one"></div>
-                    
                     <div className="cross-two"></div>
                 </div> : <></> }
                 
@@ -42,14 +43,12 @@ const Sidebar = () => {
                     <div className="side-bar__menu_logo"></div>
                     <Math className="icon math" width={27} height={27} fill={'#C0C0C0'} position={'fixed'} top={'0'} left={'0'}/>
                     <Contact className="icon contact" width={27} height={27} fill={'#C0C0C0'} position={'fixed'} top={'0'} left={'0'}/>
-                    <Forum className="icon forum" width={27} height={27} fill={'#C0C0C0'} position={'fixed'} top={'0'} left={'0'}/>
                     <Question className="icon question" width={27} height={27} fill={'#C0C0C0'}/>
                     <Cup className="icon cup" width={27} height={27} fill={'#C0C0C0'}/>
                     <li onClick={() => click('archimedus')} className="side-bar__menu-list_content">Home</li>
                     <li onClick={() => click('kata')} className="side-bar__menu-list_content">Kata</li>
                     <li onClick={() => click('aboutus')} className="side-bar__menu-list_content">About&nbsp;us</li>
                     <li onClick={() => click('login')} className="side-bar__menu-list_content">Login</li>
-                    <li onClick={() => click('forum')} className="side-bar__menu-list_content">Forum</li>
                     <li onClick={() => {
                         setSidebar(!sidebar)
                         toRanking()

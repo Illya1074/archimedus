@@ -19,12 +19,15 @@ const TaskContent = () => {
     const endpoint = useSelector(state => state.endPoint)
 
     const click = (e) => {
-      console.log(endpoint)
+      // console.log(endpoint)
+     
+
         if(e.keyCode == 13){
             // put the login here
+            console.log(JSON.parse(retrievedObj).id)
+            // console.log(user.id)
             if(e.target.value == JSON.parse(retrievedObj).answer){
                 setMark('Good')
-                console.log(user.id)
                 // console.log(JSON.parse(retrievedObj).points)
                 try{
                   Axios({
@@ -37,8 +40,9 @@ const TaskContent = () => {
                     url: endpoint+"/checkProblemExisting",
                   }).then((res) => {    
                     // console.log('ok')
-                    // console.log(res.data)
+                    console.log(res.data)
                     if(res.data !== 'exist'){
+                      dispatch(setPoints(JSON.parse(retrievedObj).points))
                       try{
                         Axios({
                           method: "POST",
@@ -59,7 +63,8 @@ const TaskContent = () => {
                       } catch(err){
                         console.log(err)
                       }
-                      dispatch(setPoints(JSON.parse(retrievedObj).points))
+                      // window.location.reload(false);
+                      
                       try{
                           Axios({
                             method: "POST",
@@ -71,7 +76,7 @@ const TaskContent = () => {
                           }).then((res) => {    
                             // console.log('ok')
                             // console.log(res.data)
-                            
+                            window.location.reload(false);
                             
                           }).catch((err) => {
                             // console.log(err)
@@ -79,6 +84,7 @@ const TaskContent = () => {
                         } catch(err){
                           console.log(err)
                         }
+                        window.location.reload(false);
                     }  
                     
                   }).catch((err) => {
@@ -88,7 +94,6 @@ const TaskContent = () => {
                   console.log(err)
                 }
 
-                
             } else {
                 setMark('Bad')
             }
@@ -97,7 +102,7 @@ const TaskContent = () => {
 
     return (
       <>
-        <Navbar/>
+        <Navbar />
         <Sidebar/>
         <Taskbar/>
         <div className="task-content">

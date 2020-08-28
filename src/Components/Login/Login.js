@@ -5,20 +5,22 @@ import {
 import './Login.css'
 import Axios from 'axios'
 import {useDispatch, useSelector} from 'react-redux'
-import {setName,setPoints,setLogin,setLevel, setId} from '../../actions/index.js'
+import { defualtState, stateInisialize} from '../../actions/index.js'
 
 const Login = () => {
     
     const history = useHistory()
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
+    const myUser = localStorage.getItem('MyUser')
     
     const dispatch = useDispatch();
     const endpoint = useSelector(state => state.endPoint)
 
 
     const login = () => {
-      localStorage.removeItem("MyUser");  
+      localStorage.removeItem("MyUser");
+      // console.log(JSON.parse(localStorage.getItem('MyUser')))  
       try{
             Axios({
               method: "POST",
@@ -29,15 +31,22 @@ const Login = () => {
               withCredentials: true,
               url: endpoint+"/login",
             }).then((res) => {    
-              console.log('ok')
-              console.log(res.data)
-              dispatch(setName(res.data.username))
-              dispatch(setPoints(res.data.points))
-              dispatch(setLogin(true))
-              dispatch(setLevel(res.data.lvl))
-              dispatch(setId(res.data._id))
+              // console.log('ok')
+              // console.log(res.data)
+              if(res.data._id){
+                  localStorage.removeItem("MyUser");
+                  dispatch(defualtState())
+                  dispatch(stateInisialize({
+                  name: res.data.username,
+                  points: res.data.points,
+                  login: true,
+                  level: res.data.lvl,
+                  id: res.data._id
+              }))
+                history.push('/archimedus')
+              }
+              // console.log(res.data)
               
-              history.push('/archimedus')
             }).catch((err) => {
               console.log(err)
             })

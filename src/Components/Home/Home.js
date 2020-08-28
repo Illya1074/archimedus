@@ -9,6 +9,13 @@ const Home = () => {
             <Navbar/>
             <Sidebar/>
             <Taskbar/>
+            <div className="home">
+                {/* <h1 className="home_header">Archimedus</h1> */}
+                <div className="home content">
+
+                </div>
+
+            </div>
         </div>
     )
 }

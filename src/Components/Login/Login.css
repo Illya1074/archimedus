@@ -60,32 +60,32 @@
 
 
 .login-input-sec__input:focus {
-  -webkit-box-shadow: 0px 0px 21px 0px rgba(255,255,255,1);
-  box-shadow: 0px 0px 21px 0px rgba(255,255,255,1);
+  -webkit-box-shadow: 0px 0px 21px 0px #ccc;
+  box-shadow: 0px 0px 21px 0px #ccc;
 }
 
 .login-input-sec__input::-webkit-input-placeholder{
-  color: white;
+  color: #ccc;
   
 }
 
 .login-input-sec__input::-moz-placeholder{
-  color: white;
+  color: #ccc;
   
 }
 
 .login-input-sec__input:-ms-input-placeholder{
-  color: white;
+  color: #ccc;
   
 }
 
 .login-input-sec__input::-ms-input-placeholder{
-  color: white;
+  color: #ccc;
   
 }
 
 .login-input-sec__input::placeholder{
-  color: white;
+  color: #ccc;
   
 }
 

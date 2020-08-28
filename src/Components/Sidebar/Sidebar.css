@@ -105,7 +105,7 @@
 }
 
 .cup{
-  top: 204px;
+  top: 164px;
   left: 12px;
 }
 
@@ -132,7 +132,7 @@
     height: 3px;
     border-radius: 10px;
     margin: 5px 0;
-    rotate:45deg;
+    transform: rotate(45deg);
     position: absolute;
     top: 30px;
     left: 20px;
@@ -142,8 +142,8 @@
     width: 30px;
     height: 3px;
     border-radius: 10px;
+    transform: rotate(-45deg);
     margin: 5px 0;
-    rotate:-45deg;
     position: absolute;
     top: 30px;
     left: 20px;

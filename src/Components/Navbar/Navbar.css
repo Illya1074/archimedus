@@ -10,9 +10,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  
+  -ms-flex-pack: end;
+  
+  justify-content: flex-end;
   height: 70px;
   width: 100vw;
   padding-right: 40px;
@@ -24,7 +31,7 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+      justify-content: space-between;
   width: 400px;
   overflow: hidden;
   /* border: 1px solid white; */

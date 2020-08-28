@@ -42,7 +42,9 @@ function App() {
         </Switch>
       </Router>
       
-      
+      <div className="space_500">
+
+            </div>
           
     </div>
   );

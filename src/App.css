@@ -41,6 +41,10 @@ a:visited:active{
   cursor: pointer;
   color: #ccc;
 }
+
+.space_500{
+  margin: 250px 0;
+}
 /* Sidebar */
 
 

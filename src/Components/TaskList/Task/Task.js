@@ -9,7 +9,7 @@ const Task = (props, {location}) => {
     const history = useHistory() 
 
     const click = () => {
-        console.log(props.id)
+        // console.log(props.id)
         const obj = {
             content: props.content,
             name: props.name,
