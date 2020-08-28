@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/archimedus/static/css/main.b02e81b2.chunk.css",
-    "main.js": "/archimedus/static/js/main.2191738f.chunk.js",
-    "main.js.map": "/archimedus/static/js/main.2191738f.chunk.js.map",
+    "main.css": "/archimedus/static/css/main.d3cfee94.chunk.css",
+    "main.js": "/archimedus/static/js/main.f7c53dc8.chunk.js",
+    "main.js.map": "/archimedus/static/js/main.f7c53dc8.chunk.js.map",
     "runtime-main.js": "/archimedus/static/js/runtime-main.dfce2e83.js",
     "runtime-main.js.map": "/archimedus/static/js/runtime-main.dfce2e83.js.map",
     "static/js/2.ec9b78bb.chunk.js": "/archimedus/static/js/2.ec9b78bb.chunk.js",
     "static/js/2.ec9b78bb.chunk.js.map": "/archimedus/static/js/2.ec9b78bb.chunk.js.map",
     "index.html": "/archimedus/index.html",
-    "precache-manifest.c0ddff42a4b8f62ded1ef1c4ffcef51b.js": "/archimedus/precache-manifest.c0ddff42a4b8f62ded1ef1c4ffcef51b.js",
+    "precache-manifest.d2a57b11e9089ff19481c77e901ee566.js": "/archimedus/precache-manifest.d2a57b11e9089ff19481c77e901ee566.js",
     "service-worker.js": "/archimedus/service-worker.js",
-    "static/css/main.b02e81b2.chunk.css.map": "/archimedus/static/css/main.b02e81b2.chunk.css.map",
+    "static/css/main.d3cfee94.chunk.css.map": "/archimedus/static/css/main.d3cfee94.chunk.css.map",
     "static/js/2.ec9b78bb.chunk.js.LICENSE.txt": "/archimedus/static/js/2.ec9b78bb.chunk.js.LICENSE.txt",
+    "static/media/Home.css": "/archimedus/static/media/rank.27152abb.jpg",
     "static/media/Login.css": "/archimedus/static/media/logo2.5d98e726.png"
   },
   "entrypoints": [
     "static/js/runtime-main.dfce2e83.js",
     "static/js/2.ec9b78bb.chunk.js",
-    "static/css/main.b02e81b2.chunk.css",
-    "static/js/main.2191738f.chunk.js"
+    "static/css/main.d3cfee94.chunk.css",
+    "static/js/main.f7c53dc8.chunk.js"
   ]
 }
